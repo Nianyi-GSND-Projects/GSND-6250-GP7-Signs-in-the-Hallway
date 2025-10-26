@@ -79,7 +79,17 @@ namespace NaniCore
 		[ContextMenu("Ungarrison")]
 		public void Ungarrison()
 		{
+#if UNITY_EDITOR
+			if(Application.isPlaying)
+				Construct(transform);
+			else
+			{
+				Construct(transform, HierarchyUtility.InstantiatePrefab);
+				UnityEditor.Undo.RegisterFullObjectHierarchyUndo(transform, "Ungarrison");
+			}
+#else
 			Construct(transform);
+#endif
 			HierarchyUtility.Destroy(this);
 		}
 
