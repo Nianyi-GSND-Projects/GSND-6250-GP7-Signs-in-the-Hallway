@@ -55,16 +55,38 @@ namespace Game
 		{
 			BlackScreenAlpha = 1;
 			BlackScreenOn = false;
+			ending.gameObject.SetActive(false);
 		}
+
+		[SerializeField] RectTransform ending;
+		[SerializeField] GameObject die, escape;
 
 		public void Die()
 		{
-			Debug.Log("Die");
+			StartCoroutine(nameof(EndCoroutine), die);
 		}
 
 		public void Escape()
 		{
-			Debug.Log("Escape");
+			StartCoroutine(nameof(EndCoroutine), escape);
+		}
+
+		IEnumerator EndCoroutine(GameObject endingText)
+		{
+			PlayerControlEnabled = false;
+			BlackScreenOn = true;
+			yield return new WaitForSeconds(blackScreenTime);
+			ending.gameObject.SetActive(true);
+			die.SetActive(false);
+			escape.SetActive(false);
+			endingText.SetActive(true);
+		}
+
+		public void ReturnToBarney()
+		{
+			ending.gameObject.SetActive(false);
+			BlackScreenOn = false;
+			PlayerControlEnabled = true;
 		}
 	}
 }
