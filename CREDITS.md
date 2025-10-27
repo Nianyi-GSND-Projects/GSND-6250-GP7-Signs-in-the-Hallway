@@ -6,3 +6,4 @@
 - `Scratch-1.png`: `https://www.shutterstock.com/image-vector/claw-mark-vector-claws-beast-ripped-2595460489`
 - `Scratch-2.png`: `https://www.shutterstock.com/image-vector/claw-mark-vector-claws-beast-ripped-2595460489`
 - `Scratch-3.png`: `https://www.shutterstock.com/image-vector/claw-mark-vector-claws-beast-ripped-2595460489`
+- `Steel.jpg`: `https://www.freepik.com/free-photo/rough-gray-wooden-textured-background_15556677.htm`

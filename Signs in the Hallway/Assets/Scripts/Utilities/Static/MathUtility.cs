@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace NaniCore
@@ -102,15 +103,11 @@ namespace NaniCore
 			return new() { min = min, max = max };
 		}
 
-		public static System.Collections.IEnumerator ProgressCoroutine(float duration, System.Action<float> continuation, float easingFactor = 0.0f)
+		public static IEnumerable<float> Tween(float duration)
 		{
 			for(float startTime = Time.time, progress; (progress = (Time.time - startTime) / duration) < 1.0f;)
-			{
-				float easedProgress = Ease(progress, easingFactor);
-				continuation(easedProgress);
-				yield return new WaitForFixedUpdate();
-			}
-			continuation(1.0f);
+				yield return progress;
+			yield return 1;
 		}
 
 		public static Bounds BoundingUnion(Bounds a, Bounds b)

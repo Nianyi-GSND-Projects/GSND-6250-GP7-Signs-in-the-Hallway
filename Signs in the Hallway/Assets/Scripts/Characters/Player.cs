@@ -1,12 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.AI;
-using UnityEngine.UI;
 
 namespace Game
 {
-	[RequireComponent(typeof(CharacterController))]
-	[RequireComponent(typeof(PlayerInput))]
 	public class Player : MonoBehaviour
 	{
 		#region Unity life cycle
@@ -28,25 +24,16 @@ namespace Game
 			float dt = Time.fixedDeltaTime;
 			if(bufferMovementInput.sqrMagnitude > 0.1f)
 			{
-				Vector3 worldVelocity = transform.localToWorldMatrix.MultiplyVector(bufferMovementInput).normalized * moveSpeed;
-				Controller.SimpleMove(worldVelocity);
+				Vector3 worldVelocity = body.localToWorldMatrix.MultiplyVector(bufferMovementInput).normalized * moveSpeed;
+				controller.SimpleMove(worldVelocity);
 			}
 		}
 		#endregion
 
 		#region Component references
+		[SerializeField] Transform body;
 		[SerializeField] Transform eye;
-
-		CharacterController controller;
-		CharacterController Controller
-		{
-			get
-			{
-				if(controller == null)
-					controller = GetComponent<CharacterController>();
-				return controller;
-			}
-		}
+		[SerializeField] CharacterController controller;
 		#endregion
 
 		#region Control
@@ -56,12 +43,12 @@ namespace Game
 		[Range(0, 1)] public float orientSpeed = 1.0f;
 		float Azimuth
 		{
-			get => transform.eulerAngles.y;
+			get => body.eulerAngles.y;
 			set
 			{
-				var euler = transform.eulerAngles;
+				var euler = body.eulerAngles;
 				euler.y = value;
-				transform.eulerAngles = euler;
+				body.eulerAngles = euler;
 			}
 		}
 		float Zenith
