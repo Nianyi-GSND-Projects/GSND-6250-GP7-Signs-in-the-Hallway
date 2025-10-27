@@ -104,7 +104,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 0538164944842bf4ba34182980187904,
         type: 3}
       propertyPath: m_Name
-      value: Wall_tile.2
+      value: Wall-v,right
       objectReference: {fileID: 0}
     - target: {fileID: 8896909134577355180, guid: 0538164944842bf4ba34182980187904,
         type: 3}
@@ -198,7 +198,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 0538164944842bf4ba34182980187904,
         type: 3}
       propertyPath: m_Name
-      value: Wall_tile
+      value: Wall-in,top
       objectReference: {fileID: 0}
     - target: {fileID: 8896909134577355180, guid: 0538164944842bf4ba34182980187904,
         type: 3}
@@ -287,7 +287,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 0538164944842bf4ba34182980187904,
         type: 3}
       propertyPath: m_Name
-      value: Wall_tile.1
+      value: Wall-out,top
       objectReference: {fileID: 0}
     - target: {fileID: 8896909134577355180, guid: 0538164944842bf4ba34182980187904,
         type: 3}
@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1661796127245833, guid: 1c38c072fccc4f14e9b984eed57900c1, type: 3}
       propertyPath: m_Name
-      value: Wall_tile-with_baseboard,black.3
+      value: Wall-in,right
       objectReference: {fileID: 0}
     - target: {fileID: 2454951016610092858, guid: 1c38c072fccc4f14e9b984eed57900c1,
         type: 3}
@@ -483,7 +483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1661796127245833, guid: 1c38c072fccc4f14e9b984eed57900c1, type: 3}
       propertyPath: m_Name
-      value: Wall_tile-with_baseboard,black.2
+      value: Wall-in,left
       objectReference: {fileID: 0}
     - target: {fileID: 2454951016610092858, guid: 1c38c072fccc4f14e9b984eed57900c1,
         type: 3}
@@ -577,7 +577,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 6b66eae5ac5ad0f42b42eacd7c0be120,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling_tile
+      value: Ceiling
       objectReference: {fileID: 0}
     - target: {fileID: 8896909134577355180, guid: 6b66eae5ac5ad0f42b42eacd7c0be120,
         type: 3}
@@ -686,7 +686,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 0538164944842bf4ba34182980187904,
         type: 3}
       propertyPath: m_Name
-      value: Wall_tile.3
+      value: Wall-v,left
       objectReference: {fileID: 0}
     - target: {fileID: 8896909134577355180, guid: 0538164944842bf4ba34182980187904,
         type: 3}
@@ -775,7 +775,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 2025032259331344baf13d4d5b20ce66,
         type: 3}
       propertyPath: m_Name
-      value: Wall_tile-with_baseboard
+      value: Wall-out,right
       objectReference: {fileID: 0}
     - target: {fileID: 8189372571771625856, guid: 2025032259331344baf13d4d5b20ce66,
         type: 3}
@@ -864,7 +864,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: 2025032259331344baf13d4d5b20ce66,
         type: 3}
       propertyPath: m_Name
-      value: Wall_tile-with_baseboard.1
+      value: Wall-out,left
       objectReference: {fileID: 0}
     - target: {fileID: 8189372571771625856, guid: 2025032259331344baf13d4d5b20ce66,
         type: 3}
@@ -953,7 +953,7 @@ PrefabInstance:
     - target: {fileID: 6030923959612715187, guid: d22ae8221f7107a439f0f8af2bf8ea8f,
         type: 3}
       propertyPath: m_Name
-      value: Floor_tile
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 8896909134577355180, guid: d22ae8221f7107a439f0f8af2bf8ea8f,
         type: 3}
