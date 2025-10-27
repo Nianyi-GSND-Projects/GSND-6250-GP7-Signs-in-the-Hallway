@@ -1,3 +1,8 @@
 - `Wall_bump-normal.jpg`: `https://www.deviantart.com/acolyte-dz-015/art/plastic-bump-normal-112667451`
 - `Wooden_planks.jpg`: Migrated from previous projects.
 - `Fine_wood_planks.jpg`: `https://stock.adobe.com/images/background-abstract-wood-texture-brown-planks/1481959360?prev_url=detail`
+- `Carpet-1.jpg`: `https://www.pinterest.com/pin/563231497126120100/`
+- `Carpet-2.jpg`: `https://www.pinterest.com/pin/314759461448245517/`
+- `Scratch-1.png`: `https://www.shutterstock.com/image-vector/claw-mark-vector-claws-beast-ripped-2595460489`
+- `Scratch-2.png`: `https://www.shutterstock.com/image-vector/claw-mark-vector-claws-beast-ripped-2595460489`
+- `Scratch-3.png`: `https://www.shutterstock.com/image-vector/claw-mark-vector-claws-beast-ripped-2595460489`
